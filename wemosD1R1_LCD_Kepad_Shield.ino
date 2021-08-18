@@ -11,6 +11,8 @@ uint8_t get_button_pressed()//this is where you might need to make some edit bec
         return down;
     else if (val > 100 && val <= 400)
         return up;
+   // else if (vall > ---- %% val < ----- )// edit that for yourself when you figure out what the readings are, you might need to add resistors
+      //  return select
     else if (val >= 0 && val <= 100)
         return right;
     else
