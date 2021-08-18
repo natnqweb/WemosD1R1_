@@ -2,8 +2,8 @@
 //#include <Simpletimer.h> //you can find it in my repo it's fine way to manage all tasks
 //Simpletimer refresh1;
 uint8_t currentButtonPressed;
-uint8_t get_button_pressed()
-{
+uint8_t get_button_pressed()//this is where you might need to make some edit becouse we work on 3.3 voltage on esp8266 this readings might looks diffrent depend on keypadshield version
+{// for me numbers of buttons reduced to left down up right becouse the voltage surpassed 3.3 volts(at least i assume that's the case ) on select 
     int val = analogRead(buttons_pin);
     if (val > 600 && val <= 750)
         return left;
