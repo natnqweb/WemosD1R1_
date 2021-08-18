@@ -1,6 +1,6 @@
 #include "buttons.h"
-#include <Simpletimer.h>
-Simpletimer refresh1;
+//#include <Simpletimer.h> //you can find it in my repo it's fine way to manage all tasks
+//Simpletimer refresh1;
 uint8_t currentButtonPressed;
 uint8_t get_button_pressed()
 {
@@ -31,10 +31,10 @@ void setup()
 }
 void readbuttons()
 {
-    if (refresh1.timer(200))
-    {
+    //if (refresh1.timer(200))
+    //{
         currentButtonPressed = get_button_pressed();
-    }
+    //}
 }
 void loop()
 {
